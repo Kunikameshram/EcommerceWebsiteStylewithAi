@@ -29,7 +29,7 @@ const ChatGPTUI = () => {
     setIsTyping(true);
     
     try {
-      const res = await fetch('http://localhost:5001/api/chat', {
+      const res = await fetch('http://3.145.109.156:5001/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text }),

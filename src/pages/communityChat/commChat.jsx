@@ -2,8 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import io from "socket.io-client";
 import axios from "axios";
 
-const SOCKET_SERVER_URL = "http://localhost:5001";
-const API_URL = "http://localhost:5001/api";
+const SOCKET_SERVER_URL = "http://3.145.109.156:5001";
+const API_URL = "http://3.145.109.156:5001/api";
 
 const currentUserId = Number(sessionStorage.getItem("userId"));
 const currentUserRole = sessionStorage.getItem("role");
