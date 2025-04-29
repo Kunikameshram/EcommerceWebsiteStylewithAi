@@ -10,7 +10,7 @@ const Reviews = () => {
 
   useEffect(() => {
     axios
-      .get("http://3.137.162.97:5001/api/products/reviews/five-star")
+      .get("https://3.137.162.97:5001/api/products/reviews/five-star")
       .then((res) => setReviews(res.data))
       .catch((err) => console.error("Failed to fetch reviews", err));
   }, []);
@@ -49,7 +49,7 @@ const Reviews = () => {
                   }`}
                 >
                   <img
-                    src={`https://randomuser.me/api/portraits/${review.username.length % 2 === 0 ? "women" : "men"}/${(review.id % 90) + 1}.jpg`}
+                    src={`httpss://randomuser.me/api/portraits/${review.username.length % 2 === 0 ? "women" : "men"}/${(review.id % 90) + 1}.jpg`}
                     alt={review.username}
                     className="mx-auto w-20 h-20 rounded-full mb-4 object-cover"
                   />

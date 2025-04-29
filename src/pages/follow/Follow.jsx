@@ -1,11 +1,11 @@
 import React from "react";
 
 const images = [
-  { src: "/images/green1.png", link: "https://www.instagram.com/example1", color: "outline-green-500" },
-  { src: "/images/orange1.png", link: "https://www.instagram.com/example2", color: "outline-orange-500" },
-  { src: "/images/pink1.png", link: "https://www.instagram.com/example3", color: "outline-pink-500" },
-  { src: "/images/white1.png", link: "https://www.instagram.com/example4", color: "outline-gray-500" },
-  { src: "/images/yellow1.png", link: "https://www.instagram.com/example5", color: "outline-yellow-500" },
+  { src: "/images/green1.png", link: "httpss://www.instagram.com/example1", color: "outline-green-500" },
+  { src: "/images/orange1.png", link: "httpss://www.instagram.com/example2", color: "outline-orange-500" },
+  { src: "/images/pink1.png", link: "httpss://www.instagram.com/example3", color: "outline-pink-500" },
+  { src: "/images/white1.png", link: "httpss://www.instagram.com/example4", color: "outline-gray-500" },
+  { src: "/images/yellow1.png", link: "httpss://www.instagram.com/example5", color: "outline-yellow-500" },
   
 ];
 

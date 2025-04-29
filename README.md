@@ -8,9 +8,9 @@ A full-stack e-commerce app with a React + Vite frontend and a Node.js (Express)
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- [npm](https://www.npmjs.com/)
-- [MySQL](https://www.mysql.com/) database running
+- [Node.js](httpss://nodejs.org/) (v18+ recommended)
+- [npm](httpss://www.npmjs.com/)
+- [MySQL](httpss://www.mysql.com/) database running
 
 ---
 
@@ -38,7 +38,7 @@ A full-stack e-commerce app with a React + Vite frontend and a Node.js (Express)
     node index.js
     ```
 
-    The backend runs by default at [http://3.137.162.97:5001](http://3.137.162.97:5001).
+    The backend runs by default at [https://3.137.162.97:5001](https://3.137.162.97:5001).
 
 ---
 
@@ -53,7 +53,7 @@ A full-stack e-commerce app with a React + Vite frontend and a Node.js (Express)
 
 2. **(Optional) Configure API URLs:**
 
-    - Make sure API calls in your React app point to `http://3.137.162.97:5001` (backend URL).
+    - Make sure API calls in your React app point to `https://3.137.162.97:5001` (backend URL).
 
 3. **Start the frontend:**
 
@@ -61,14 +61,14 @@ A full-stack e-commerce app with a React + Vite frontend and a Node.js (Express)
     npm run dev
     ```
 
-    The frontend runs at [http://3.137.162.97:5173](http://3.137.162.97:5173) by default.
+    The frontend runs at [https://3.137.162.97:5173](https://3.137.162.97:5173) by default.
 
 ---
 
 ### 3. Usage
 
-- Visit [http://3.137.162.97:5173](http://3.137.162.97:5173) in your browser to use the app.
-- Ensure the backend server (`http://3.137.162.97:5001`) is running.
+- Visit [https://3.137.162.97:5173](https://3.137.162.97:5173) in your browser to use the app.
+- Ensure the backend server (`https://3.137.162.97:5001`) is running.
 
 ---
 
