@@ -1,0 +1,14 @@
+/* 
+1002160386 - Kunika Meshram
+1002210620 - Yamini Saraswathi Nuthalapati
+1002223439 - Namburi Rohitha Sreya
+1001879154 - Jatin Sai Krishna Muddam
+1002199132 - Nandala Abhignya Reddy
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+}
