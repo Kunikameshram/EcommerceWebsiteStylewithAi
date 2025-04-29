@@ -9,7 +9,7 @@ const Cart = () => {
 useEffect(() => {
   if (!userId) return;
   axios
-    .get(`http://3.145.109.156:5001/api/cart?userId=${userId}`)
+    .get(`http://3.137.162.97:5001/api/cart?userId=${userId}`)
     .then((res) => setCartItems(res.data))
     .catch((err) => console.error(err));
 }, [userId]);
@@ -24,14 +24,14 @@ useEffect(() => {
     setCartItems(updated);
 
     const updatedItem = updated.find((item) => item.id === id);
-    axios.put("http://3.145.109.156:5001/api/cart/update", {
+    axios.put("http://3.137.162.97:5001/api/cart/update", {
       id,
       quantity: updatedItem.quantity,
     });
   };
 
   const removeItem = (id) => {
-    axios.delete(`http://3.145.109.156:5001/api/cart/${id}`).then(() => {
+    axios.delete(`http://3.137.162.97:5001/api/cart/${id}`).then(() => {
       setCartItems((prev) => prev.filter((item) => item.id !== id));
     });
   };

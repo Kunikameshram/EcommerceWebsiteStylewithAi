@@ -23,7 +23,7 @@ const AccountPage = () => {
   const fetchUserProfile = async () => {
     try {
       setLoading((l) => ({ ...l, profile: true }));
-      const res = await axios.get(`http://3.145.109.156:5001/api/auth/user/${userId}`, {
+      const res = await axios.get(`http://3.137.162.97:5001/api/auth/user/${userId}`, {
         withCredentials: true,
       });
       setProfile({
@@ -63,7 +63,7 @@ const AccountPage = () => {
     try {
       setLoading((l) => ({ ...l, profile: true }));
       await axios.post(
-        "http://3.145.109.156:5001/api/auth/update-account",
+        "http://3.137.162.97:5001/api/auth/update-account",
         {
           user_id: userId,
           username: profile.name,
@@ -89,7 +89,7 @@ const AccountPage = () => {
     try {
       setLoading((l) => ({ ...l, password: true }));
       await axios.post(
-        "http://3.145.109.156:5001/api/auth/reset-password",
+        "http://3.137.162.97:5001/api/auth/reset-password",
         {
           user_id: userId,
           currentPassword: password.current,

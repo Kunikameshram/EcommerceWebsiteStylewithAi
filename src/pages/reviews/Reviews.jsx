@@ -10,7 +10,7 @@ const Reviews = () => {
 
   useEffect(() => {
     axios
-      .get("http://3.145.109.156:5001/api/products/reviews/five-star")
+      .get("http://3.137.162.97:5001/api/products/reviews/five-star")
       .then((res) => setReviews(res.data))
       .catch((err) => console.error("Failed to fetch reviews", err));
   }, []);

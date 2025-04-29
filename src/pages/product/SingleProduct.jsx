@@ -38,7 +38,7 @@ const SingleProduct = () => {
 
     // Fetch main product
     axios
-      .get(`http://3.145.109.156:5001/api/products/${id}`)
+      .get(`http://3.137.162.97:5001/api/products/${id}`)
       .then((res) => {
         setProduct(res.data);
 
@@ -64,7 +64,7 @@ const SingleProduct = () => {
     // Fetch reviews for this product
     setReviewsLoading(true);
     axios
-      .get(`http://3.145.109.156:5001/api/products/${id}/reviews`)
+      .get(`http://3.137.162.97:5001/api/products/${id}/reviews`)
       .then((res) => {
         setReviews(res.data);
         // Calculate average rating
@@ -78,7 +78,7 @@ const SingleProduct = () => {
 
     // Fetch similar products
     axios
-      .get(`http://3.145.109.156:5001/api/products/similar/${id}`)
+      .get(`http://3.137.162.97:5001/api/products/similar/${id}`)
       .then((res) => setSimilarProducts(res.data))
       .catch((err) => console.error("Failed to fetch similar products", err));
   }, [id]);
@@ -100,7 +100,7 @@ const SingleProduct = () => {
     setLoading(true);
 
     axios
-      .post("http://3.145.109.156:5001/api/cart/add", {
+      .post("http://3.137.162.97:5001/api/cart/add", {
         user_id: userId,
         product_id: product.id,
         quantity,

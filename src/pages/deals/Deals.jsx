@@ -20,7 +20,7 @@ const EnhancedDealsCarousel = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://3.145.109.156:5001/api/products/deals?user_id=${userId}`)
+      .get(`http://3.137.162.97:5001/api/products/deals?user_id=${userId}`)
       .then((res) => {
         setDeals(res.data);
         setLoading(false);
