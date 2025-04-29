@@ -13,7 +13,7 @@ const Arrivals = () => {
 
   useEffect(() => {
     axios
-      .get("https://3.137.162.97:5001/api/products/arrivals?page=1&limit=30")
+      .get("http://3.137.162.97:5001/api/products/arrivals?page=1&limit=30")
       .then((res) => setProducts(res.data))
       .catch((err) => console.error(err));
   }, []);
@@ -169,7 +169,7 @@ const Arrivals = () => {
                   <button
                     onClick={() => {
                       axios
-                        .post("https://3.137.162.97:5001/api/cart/add", {
+                        .post("http://3.137.162.97:5001/api/cart/add", {
                           user_id: 1,
                           product_id: expandedProductData.id,
                           quantity: 1,
