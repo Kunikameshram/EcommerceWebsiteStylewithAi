@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Search for files containing the target string and replace it in-place
+find . -type f -print0 | \
+xargs -0 grep -l '3.137.162.97:5001' | \
+xargs -0 perl -pi~ -e 's/3\.137\.162\.97:5001/3.145.105.122:5000/g'
